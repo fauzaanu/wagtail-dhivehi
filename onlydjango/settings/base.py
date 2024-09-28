@@ -12,10 +12,11 @@ FIRST_PARTY_APPS = [
 ]
 
 ALL_AUTH_APPS = [
+    "allauth_ui",
     "allauth",
     "allauth.account",
-    "allauth.socialaccount",
-    "allauth.socialaccount.providers.telegram",
+    # "allauth.socialaccount",
+    # "allauth.socialaccount.providers.telegram",
     # # ... include the providers you want to enable:
     # 'allauth.socialaccount.providers.telegram',
     # 'allauth.socialaccount.providers.apple',
@@ -23,8 +24,10 @@ ALL_AUTH_APPS = [
     # 'allauth.socialaccount.providers.discord',
     # 'allauth.socialaccount.providers.facebook',
     # 'allauth.socialaccount.providers.microsoft',
+    "widget_tweaks",
+    "slippers",
 ]
-
+ALLAUTH_UI_THEME = "light"
 THIRD_PARTY_APPS = [
     "django_browser_reload",
     "huey.contrib.djhuey",
@@ -32,6 +35,28 @@ THIRD_PARTY_APPS = [
     "debug_toolbar",
 ]
 
+WAGTAIL_APPS = [
+
+    'wagtail.locales',
+    'wagtail.contrib.forms',
+    'wagtail.contrib.redirects',
+    'wagtail.embeds',
+    'wagtail.sites',
+    'wagtail.users',
+    'wagtail.snippets',
+    'wagtail.documents',
+    'wagtail.images',
+    'wagtail.search',
+    'wagtail.admin',
+
+    'wagtail',
+
+    'modelcluster',
+    'taggit',
+]
+WAGTAIL_SITE_NAME = 'My Example Site'
+WAGTAILADMIN_BASE_URL = 'http://example.com'
+WAGTAILDOCS_EXTENSIONS = ['csv', 'docx', 'key', 'odt', 'pdf', 'pptx', 'rtf', 'txt', 'xlsx', 'zip']
 DJANGO_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
@@ -45,7 +70,7 @@ DJANGO_APPS = [
 ]
 
 INSTALLED_APPS = (DJANGO_APPS + ALL_AUTH_APPS + THIRD_PARTY_APPS +
-                  FIRST_PARTY_APPS)
+                  FIRST_PARTY_APPS + WAGTAIL_APPS)
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = "tailwind"
 CRISPY_TEMPLATE_PACK = "tailwind"
@@ -56,6 +81,7 @@ CSRF_TRUSTED_ORIGINS = ["https://onlydjango.com", "https://www.onlydjango.com"]
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
+    'wagtail.contrib.redirects.middleware.RedirectMiddleware',
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
@@ -121,11 +147,15 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
-LANGUAGE_CODE = "en-us"
+LANGUAGE_CODE = "dv-mv"
 TIME_ZONE = "Indian/Maldives"
-USE_I18N = False
+USE_I18N = True
 USE_TZ = True
-
+WAGTAIL_I18N_ENABLED = True
+USE_L10N = True
+WAGTAIL_CONTENT_LANGUAGES = LANGUAGES = [
+    ('dv', "Dhivehi"),
+]
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
@@ -140,7 +170,7 @@ ACCOUNT_SIGNUP_REDIRECT_URL = "/"
 LOGIN_REDIRECT_URL = "/"
 SOCIALACCOUNT_EMAIL_AUTHENTICATION = True
 SOCIALACCOUNT_STORE_TOKENS = True
-SOCIALACCOUNT_ONLY = True
+SOCIALACCOUNT_ONLY = False
 
 SOCIALACCOUNT_PROVIDERS = {
     'telegram': {

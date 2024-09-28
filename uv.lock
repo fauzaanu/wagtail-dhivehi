@@ -205,6 +205,15 @@ wheels = [
 ]
 
 [[package]]
+name = "anyascii"
+version = "0.3.2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/9f/52/93b9ea99063f7cf37fb67f5e3f49480686cbe7f228c48b9d713326223b6e/anyascii-0.3.2.tar.gz", hash = "sha256:9d5d32ef844fe225b8bc7cba7f950534fae4da27a9bf3a6bea2cb0ea46ce4730", size = 214052 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/4f/7b/a9a747e0632271d855da379532b05a62c58e979813814a57fa3b3afeb3a4/anyascii-0.3.2-py3-none-any.whl", hash = "sha256:3b3beef6fc43d9036d3b0529050b0c48bfad8bc960e9e562d7223cfb94fe45d4", size = 289923 },
+]
+
+[[package]]
 name = "anyio"
 version = "4.4.0"
 source = { registry = "https://pypi.org/simple" }
@@ -400,6 +409,15 @@ wheels = [
 ]
 
 [[package]]
+name = "defusedxml"
+version = "0.7.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/0f/d5/c66da9b79e5bdb124974bfe172b4daf3c984ebd9c2a06e2b8a4dc7331c72/defusedxml-0.7.1.tar.gz", hash = "sha256:1bb3032db185915b62d7c6209c5a8792be6a32ab2fedacc84e01b52c51aa3e69", size = 75520 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/07/6c/aa3f2f849e01cb6a001cd8554a88d4c77c5c1a31c95bdf1cf9301e6d9ef4/defusedxml-0.7.1-py2.py3-none-any.whl", hash = "sha256:a352e7e428770286cc899e2542b6cdaedb2b4953ff269a210103ec58f6198a61", size = 25604 },
+]
+
+[[package]]
 name = "diff-match-patch"
 version = "20230430"
 source = { registry = "https://pypi.org/simple" }
@@ -448,6 +466,19 @@ dependencies = [
     { name = "django" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/3c/d0/89ed4957a6d857b57cad87bbcd567f5bc7480e6fe4fb3982e97eca304b15/django_allauth-64.1.0.tar.gz", hash = "sha256:713bfc410021140aefae0f04eeaac5d50ebedad7abaf43174670a9ec002c595c", size = 1205137 }
+
+[[package]]
+name = "django-allauth-ui"
+version = "1.4.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "django-widget-tweaks" },
+    { name = "slippers" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/ff/51/4db2ba2ebc6fdc680cfffc82b1a1697126a3d8992ca87f68441cac77b16e/django_allauth_ui-1.4.1.tar.gz", hash = "sha256:b8b7971ff00e8d19ad3a47ae5bd9f25e09f3acce2bd8beee9a07df0441c48096", size = 34756 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/30/b3/c069aa9f09605866063c1cf9cb8e93f01ee4d3a0fcce35c36f09ce64f530/django_allauth_ui-1.4.1-py3-none-any.whl", hash = "sha256:bc499b855b9cbe03650c0afefc7b0b57ce1ca7f043139123b1d242d08a67defc", size = 51832 },
+]
 
 [[package]]
 name = "django-browser-reload"
@@ -512,6 +543,43 @@ wheels = [
 ]
 
 [[package]]
+name = "django-filter"
+version = "24.3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "django" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/50/bc/dc19ae39c235332926dd0efe0951f663fa1a9fc6be8430737ff7fd566b20/django_filter-24.3.tar.gz", hash = "sha256:d8ccaf6732afd21ca0542f6733b11591030fa98669f8d15599b358e24a2cd9c3", size = 144444 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/09/b1/92f1c30b47c1ebf510c35a2ccad9448f73437e5891bbd2b4febe357cc3de/django_filter-24.3-py3-none-any.whl", hash = "sha256:c4852822928ce17fb699bcfccd644b3574f1a2d80aeb2b4ff4f16b02dd49dc64", size = 95011 },
+]
+
+[[package]]
+name = "django-modelcluster"
+version = "6.3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "django" },
+    { name = "pytz" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/3d/dd/db1ab2e256f9fda6796ac312686561cbe2740d960c920f74410559ef7739/django-modelcluster-6.3.tar.gz", hash = "sha256:0caed8a0e889f3abb92f144670878a466ef954ffa6c4c7b9c80e6426b720a49d", size = 28903 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/ee/6d/8deb2dfde2e1177412b759a1c32713be19b1d3af1da686e44e64c165e8c0/django_modelcluster-6.3-py2.py3-none-any.whl", hash = "sha256:a8783d6565a0663f41cd6003ea361c3a5711e8a2a326160f1ec1eceb3e973d4f", size = 29039 },
+]
+
+[[package]]
+name = "django-permissionedforms"
+version = "0.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "django" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/94/4b/364fe61a161ead607dc6af311901ba8e62f537f8fdab94b5252cb6efe6d7/django-permissionedforms-0.1.tar.gz", hash = "sha256:4340bb20c4477fffb13b4cc5cccf9f1b1010b64f79956c291c72d2ad2ed243f8", size = 5856 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/e6/5b/216157ff053f955b15b9dcdc13bfb6e406666445164fee9e332e141be96d/django_permissionedforms-0.1-py2.py3-none-any.whl", hash = "sha256:d341a961a27cc77fde8cc42141c6ab55cc1f0cb886963cc2d6967b9674fa47d6", size = 5744 },
+]
+
+[[package]]
 name = "django-storages"
 version = "1.14.4"
 source = { registry = "https://pypi.org/simple" }
@@ -529,12 +597,84 @@ s3 = [
 ]
 
 [[package]]
+name = "django-taggit"
+version = "5.0.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "django" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/10/eb/269501702e231b552f68d813d0a07ac1ea81fd25a3c92fb0f249818f0f39/django-taggit-5.0.1.tar.gz", hash = "sha256:edcd7db1e0f35c304e082a2f631ddac2e16ef5296029524eb792af7430cab4cc", size = 60372 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/07/18/94a45c8c50592d5cf7d73a9111053917c3684fda031c988041396bb3e588/django_taggit-5.0.1-py3-none-any.whl", hash = "sha256:a0ca8a28b03c4b26c2630fd762cb76ec39b5e41abf727a7b66f897a625c5e647", size = 61141 },
+]
+
+[[package]]
+name = "django-treebeard"
+version = "4.7.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "django" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/bb/24/eaccbce17355380cb3a8fe6ad92a85b76453dc1f0ecd04f48bfe8929065b/django-treebeard-4.7.1.tar.gz", hash = "sha256:846e462904b437155f76e04907ba4e48480716855f88b898df4122bdcfbd6e98", size = 294139 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/87/79/259966820614746cc4d81762edf97a53bf1e3b8e74797c010d310c6f4a8f/django_treebeard-4.7.1-py3-none-any.whl", hash = "sha256:995c7120153ab999898fe3043bbdcd8a0fc77cc106eb94de7350e9d02c885135", size = 93210 },
+]
+
+[[package]]
+name = "django-widget-tweaks"
+version = "1.5.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/a5/fe/26eb92fba83844e71bbec0ced7fc2e843e5990020e3cc676925204031654/django-widget-tweaks-1.5.0.tar.gz", hash = "sha256:1c2180681ebb994e922c754804c7ffebbe1245014777ac47897a81f57cc629c7", size = 14767 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/46/6a/6cb6deb5c38b785c77c3ba66f53051eada49205979c407323eb666930915/django_widget_tweaks-1.5.0-py3-none-any.whl", hash = "sha256:a41b7b2f05bd44d673d11ebd6c09a96f1d013ee98121cb98c384fe84e33b881e", size = 8960 },
+]
+
+[[package]]
+name = "djangorestframework"
+version = "3.15.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "django" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/2c/ce/31482eb688bdb4e271027076199e1aa8d02507e530b6d272ab8b4481557c/djangorestframework-3.15.2.tar.gz", hash = "sha256:36fe88cd2d6c6bec23dca9804bab2ba5517a8bb9d8f47ebc68981b56840107ad", size = 1067420 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/7c/b6/fa99d8f05eff3a9310286ae84c4059b08c301ae4ab33ae32e46e8ef76491/djangorestframework-3.15.2-py3-none-any.whl", hash = "sha256:2b8871b062ba1aefc2de01f773875441a961fefbf79f5eed1e32b2f096944b20", size = 1071235 },
+]
+
+[[package]]
+name = "draftjs-exporter"
+version = "5.0.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/29/5b/7729b1a95d48d2f51b03feacda1d5b17058e1caec524592e59d0df801a8c/draftjs_exporter-5.0.0.tar.gz", hash = "sha256:2efee45d4bb4c0aaacc3e5ea2983a29a29381e02037f3f92a6b12706d7b87e1e", size = 33271 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/58/f4/95ad9b91194156f0e87877d640428b1c7be70a90979796ecdcb77adcfb4f/draftjs_exporter-5.0.0-py3-none-any.whl", hash = "sha256:8cb9d2d51284233decfe274802f1c53e257158c62b9f53ed2399de3fa80ac561", size = 26320 },
+]
+
+[[package]]
+name = "et-xmlfile"
+version = "1.1.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/3d/5d/0413a31d184a20c763ad741cc7852a659bf15094c24840c5bdd1754765cd/et_xmlfile-1.1.0.tar.gz", hash = "sha256:8eb9e2bc2f8c97e37a2dc85a09ecdcdec9d8a396530a6d5a33b30b9a92da0c5c", size = 3218 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/96/c2/3dd434b0108730014f1b96fd286040dc3bcb70066346f7e01ec2ac95865f/et_xmlfile-1.1.0-py3-none-any.whl", hash = "sha256:a2ba85d1d6a74ef63837eed693bcb89c3f752169b0e3e7ae5b16ca5e1b3deada", size = 4688 },
+]
+
+[[package]]
 name = "filelock"
 version = "3.15.4"
 source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/08/dd/49e06f09b6645156550fb9aee9cc1e59aba7efbc972d665a1bd6ae0435d4/filelock-3.15.4.tar.gz", hash = "sha256:2207938cbc1844345cb01a5a95524dae30f0ce089eba5b00378295a17e3e90cb", size = 18007 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/ae/f0/48285f0262fe47103a4a45972ed2f9b93e4c80b8fd609fa98da78b2a5706/filelock-3.15.4-py3-none-any.whl", hash = "sha256:6ca1fffae96225dab4c6eaf1c4f4f28cd2568d3ec2a44e15a08520504de468e7", size = 16159 },
+]
+
+[[package]]
+name = "filetype"
+version = "1.2.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/bb/29/745f7d30d47fe0f251d3ad3dc2978a23141917661998763bebb6da007eb1/filetype-1.2.0.tar.gz", hash = "sha256:66b56cd6474bf41d8c54660347d37afcc3f7d1970648de365c102ef77548aadb", size = 998020 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/18/79/1b8fa1bb3568781e84c9200f951c735f3f157429f44be0495da55894d620/filetype-1.2.0-py2.py3-none-any.whl", hash = "sha256:7ce71b6880181241cf7ac8697a2f1eb6a8bd9b429f7ad6d27b8db9ba5f1c2d25", size = 19970 },
 ]
 
 [[package]]
@@ -774,6 +914,31 @@ wheels = [
 ]
 
 [[package]]
+name = "l18n"
+version = "2021.3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "pytz" },
+    { name = "six" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/ff/9c/13d732e16e8fbdef7e68f4f339f3b86618430d4003c7ffe82e15bf925d7c/l18n-2021.3.tar.gz", hash = "sha256:1956e890d673d17135cc20913253c154f6bc1c00266c22b7d503cc1a5a42d848", size = 50712 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/6c/e7/dfa82d0bb2b314950e457a755463b429090127ffc0ab9d8d14ef4563ad44/l18n-2021.3-py3-none-any.whl", hash = "sha256:78495d1df95b6f7dcc694d1ba8994df709c463a1cbac1bf016e1b9a5ce7280b9", size = 51534 },
+]
+
+[[package]]
+name = "laces"
+version = "0.1.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "django" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/a2/cb/d69f2cbb248bd6baceb7597d8c6c229797689b546ac2a446fac15b8f455f/laces-0.1.1.tar.gz", hash = "sha256:e45159c46f6adca33010d34e9af869e57201b70675c6dc088e919b16c89456a4", size = 26889 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/e0/dc/ceadbdc5e14aec7bd01bdd6ef8d5bf704d6a12d1b5a25bcaaa066bdb820d/laces-0.1.1-py3-none-any.whl", hash = "sha256:ae2c575b9aaa46154e5518c61c9f86f5a9478f753a51e9c5547c7d275d361242", size = 21349 },
+]
+
+[[package]]
 name = "litellm"
 version = "1.41.27"
 source = { registry = "https://pypi.org/simple" }
@@ -893,61 +1058,6 @@ wheels = [
 ]
 
 [[package]]
-name = "onlydjango"
-version = "0.1.0"
-source = { virtual = "." }
-dependencies = [
-    { name = "crispy-tailwind" },
-    { name = "django" },
-    { name = "django-allauth" },
-    { name = "django-cotton" },
-    { name = "django-crispy-forms" },
-    { name = "django-custom-error-views" },
-    { name = "django-storages", extra = ["s3"] },
-    { name = "gunicorn" },
-    { name = "huey" },
-    { name = "pillow" },
-    { name = "psycopg", extra = ["binary", "pool"] },
-    { name = "python-dotenv" },
-    { name = "pytz" },
-    { name = "redis" },
-]
-
-[package.dev-dependencies]
-dev = [
-    { name = "aider-chat", extra = ["browser"] },
-    { name = "django-browser-reload" },
-    { name = "django-debug-toolbar" },
-    { name = "ruff" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "crispy-tailwind", specifier = ">=1.0.3" },
-    { name = "django", specifier = ">=5.1" },
-    { name = "django-allauth", specifier = ">=64.1.0" },
-    { name = "django-cotton", specifier = ">=0.9.32" },
-    { name = "django-crispy-forms", specifier = ">=2.3" },
-    { name = "django-custom-error-views", specifier = ">=0.2.5" },
-    { name = "django-storages", extras = ["s3"], specifier = ">=1.14.4" },
-    { name = "gunicorn", specifier = ">=23.0.0" },
-    { name = "huey", specifier = ">=2.5.1" },
-    { name = "pillow", specifier = ">=10.4.0" },
-    { name = "psycopg", extras = ["binary", "pool"], specifier = ">=3.2.1" },
-    { name = "python-dotenv", specifier = ">=1.0.1" },
-    { name = "pytz", specifier = ">=2024.1" },
-    { name = "redis", specifier = ">=5.0.8" },
-]
-
-[package.metadata.requires-dev]
-dev = [
-    { name = "aider-chat", extras = ["browser"], specifier = "==0.46.1" },
-    { name = "django-browser-reload", specifier = "==1.12.1" },
-    { name = "django-debug-toolbar", specifier = "==4.2.0" },
-    { name = "ruff", specifier = ">=0.6.3" },
-]
-
-[[package]]
 name = "openai"
 version = "1.37.0"
 source = { registry = "https://pypi.org/simple" }
@@ -963,6 +1073,18 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/81/2d/5689233e015aed341b3945d4d1dbc01bef3a895e0ec7a26420f28dfd6927/openai-1.37.0.tar.gz", hash = "sha256:dc8197fc40ab9d431777b6620d962cc49f4544ffc3011f03ce0a805e6eb54adb", size = 261048 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/ad/11/7f75f22019777c18c933df6cc0fff4095df3b35f087a1a4c2bd3ca841bd1/openai-1.37.0-py3-none-any.whl", hash = "sha256:a903245c0ecf622f2830024acdaa78683c70abb8e9d37a497b851670864c9f73", size = 337004 },
+]
+
+[[package]]
+name = "openpyxl"
+version = "3.1.5"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "et-xmlfile" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/3d/f9/88d94a75de065ea32619465d2f77b29a0469500e99012523b91cc4141cd1/openpyxl-3.1.5.tar.gz", hash = "sha256:cf0e3cf56142039133628b5acffe8ef0c12bc902d2aadd3e0fe5878dc08d1050", size = 186464 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/c0/da/977ded879c29cbd04de313843e76868e6e13408a94ed6b987245dc7c8506/openpyxl-3.1.5-py2.py3-none-any.whl", hash = "sha256:5282c12b107bffeef825f4617dc029afaf41d0ea60823bbb665ef3079dc79de2", size = 250910 },
 ]
 
 [[package]]
@@ -1032,6 +1154,31 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/7b/f9/cfaa5082ca9bc4a6de66ffe1c12c2d90bf09c309a5f52b27759a596900e7/pillow-10.4.0-cp313-cp313-win32.whl", hash = "sha256:551d3fd6e9dc15e4c1eb6fc4ba2b39c0c7933fa113b220057a34f4bb3268a060", size = 2235603 },
     { url = "https://files.pythonhosted.org/packages/01/6a/30ff0eef6e0c0e71e55ded56a38d4859bf9d3634a94a88743897b5f96936/pillow-10.4.0-cp313-cp313-win_amd64.whl", hash = "sha256:030abdbe43ee02e0de642aee345efa443740aa4d828bfe8e2eb11922ea6a21ea", size = 2554972 },
     { url = "https://files.pythonhosted.org/packages/48/2c/2e0a52890f269435eee38b21c8218e102c621fe8d8df8b9dd06fabf879ba/pillow-10.4.0-cp313-cp313-win_arm64.whl", hash = "sha256:5b001114dd152cfd6b23befeb28d7aee43553e2402c9f159807bf55f33af8a8d", size = 2243375 },
+]
+
+[[package]]
+name = "pillow-heif"
+version = "0.18.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "pillow" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/c9/bb/e7797fe7f5cad447bb470f916ead38f0929e8d28bdf6bd5d9f31dfe1ac26/pillow_heif-0.18.0.tar.gz", hash = "sha256:70318dad9faa76121c6592ac0ab59881ff0dac6ab791a922e70d82c7706cce88", size = 16172675 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/5a/48/4bdce48d77c307b50bba0c77d6485e156f0fefcca273ce007351ad1deb40/pillow_heif-0.18.0-cp312-cp312-macosx_12_0_x86_64.whl", hash = "sha256:c795e7ccceea33e01e49ce536139f94cabb1bf017393666f76c05a9daebae2da", size = 5279030 },
+    { url = "https://files.pythonhosted.org/packages/3c/d8/8f2f8f44b6fc3689ace680b21655a0eabb1393f8e66b8851b0f95b8aac1c/pillow_heif-0.18.0-cp312-cp312-macosx_14_0_arm64.whl", hash = "sha256:4dd5b3ec09be45c1ef63be31773df90e18ee08e5e950018b0a349924b54a24ac", size = 3732529 },
+    { url = "https://files.pythonhosted.org/packages/f8/61/f0aac50a7ad051e1cb71ed7a8d3a94b5e54ea8ed1acb03586f0fcdebd730/pillow_heif-0.18.0-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:eb2eade59c2654c2643a3b637de37c19e75a77c66a3e9a5e0ae26210e4f48aee", size = 6759746 },
+    { url = "https://files.pythonhosted.org/packages/4b/71/a8b3684f64307b96ea0ae14594564b41fdf4d4a6f7df5ef73d180a71db5d/pillow_heif-0.18.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:35b59d599bfdb8454739db6b92f0841ecadbe887babb5ed5abd5299587843eef", size = 7586203 },
+    { url = "https://files.pythonhosted.org/packages/d8/59/3b1c90f7d366fb653f5f072803ae6350e608bea0d0d0ea65d6e7764c470f/pillow_heif-0.18.0-cp312-cp312-musllinux_1_2_aarch64.whl", hash = "sha256:26a0b8b8e899e7bcc876ee61fcadb0f0b849bd6a0d5c20f0e969c77a43b40568", size = 8119771 },
+    { url = "https://files.pythonhosted.org/packages/48/20/a72297dc260d0bf8fce8f209d36ceb498b2f1e8beb478a0ab3f565c9a3c9/pillow_heif-0.18.0-cp312-cp312-musllinux_1_2_x86_64.whl", hash = "sha256:0276a3e0c667677ed0c67f4512cdf2f674065018049307ba4de5cb4648b0a33e", size = 8850943 },
+    { url = "https://files.pythonhosted.org/packages/12/98/2bcb2790618cfb8ce2054256a4d3bc2597288bf82444cc87fdc815484c38/pillow_heif-0.18.0-cp312-cp312-win_amd64.whl", hash = "sha256:5916fa31f2015626dd2372d14e24521ea6caed11b25be14faa9b9c67731087ce", size = 8547707 },
+    { url = "https://files.pythonhosted.org/packages/7b/63/3f2b414d86ddadb79c6ee43bf88fc88b7b947983e7780c69ae2cc431f613/pillow_heif-0.18.0-cp313-cp313-macosx_12_0_x86_64.whl", hash = "sha256:ca554f086bc146f1a798adcd77fdecd81564cc0cd74802ee61e3869ab87282f7", size = 5279034 },
+    { url = "https://files.pythonhosted.org/packages/29/e0/f398fa67928dc24d45662e4dac6c686fce9536786bcc6a251c4936ce95c0/pillow_heif-0.18.0-cp313-cp313-macosx_14_0_arm64.whl", hash = "sha256:2821d30d22bbb94c2a0fae25eb566421bf22c909958e031d3f0973b482b88515", size = 3732522 },
+    { url = "https://files.pythonhosted.org/packages/84/8f/65caf4adbe8d896c8373e82643059424001ee6519b819fb1920d5eb8f74c/pillow_heif-0.18.0-cp313-cp313-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:8376309e178f39a2891183cb9662f1c2c87b8614ff13871f077f89edf65ecf48", size = 6759657 },
+    { url = "https://files.pythonhosted.org/packages/61/17/c3ae8b3bc6a001ea86720c8be77e3120d0225e93f7c8762911d020940b23/pillow_heif-0.18.0-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:3549e26a65e04e7e986888993b03aae0f848576c2404b5edf12d7db76ef2e72b", size = 7586124 },
+    { url = "https://files.pythonhosted.org/packages/90/de/f8918a1afcd2edb513995c2dcb3c195d44300782cafd4e6a12d8b58d07b4/pillow_heif-0.18.0-cp313-cp313-musllinux_1_2_aarch64.whl", hash = "sha256:0138a08ed90e54c230878c0b8cb92447ad591b7b2e86bfca145029322ba384c7", size = 8119727 },
+    { url = "https://files.pythonhosted.org/packages/17/d2/6145fe35b4ef257e8739834911a5fc50d93f338437b318682ab9b9a6656e/pillow_heif-0.18.0-cp313-cp313-musllinux_1_2_x86_64.whl", hash = "sha256:f552419c8bd754603f1dfbc7f8cdd666118fdd3d063d67974c5bd5a8d7fed9de", size = 8850930 },
+    { url = "https://files.pythonhosted.org/packages/d5/1c/18534a12f8b253cc50ac4ce8bd80ab82aac657ba82fefed13f16ae2802b3/pillow_heif-0.18.0-cp313-cp313-win_amd64.whl", hash = "sha256:be148b8463ac5d25fdf94d70c69a53712890cd3974ead906c98e7bf35fc96ba6", size = 8547707 },
 ]
 
 [[package]]
@@ -1439,6 +1586,21 @@ wheels = [
 ]
 
 [[package]]
+name = "slippers"
+version = "0.6.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "django" },
+    { name = "pyyaml" },
+    { name = "typeguard" },
+    { name = "typing-extensions" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/a7/c6/6af4500f31e53e9f782d264cb715f1a8cc9ac4248fba9fe2fe172822ea79/slippers-0.6.2.tar.gz", hash = "sha256:4cb555b8822ba0d404e5405723f5d723994022c29046008ee917081031bc0cf1", size = 59499 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/d5/8c/1fe2803870861f9a7f0cf502e4d1361dbb3685997118f4f76fd83ec9272f/slippers-0.6.2-py3-none-any.whl", hash = "sha256:739e05f85354becbf0a65daab831eea62557d89e7512042209ab629af4378bca", size = 61359 },
+]
+
+[[package]]
 name = "smmap"
 version = "5.0.1"
 source = { registry = "https://pypi.org/simple" }
@@ -1536,6 +1698,12 @@ sdist = { url = "https://files.pythonhosted.org/packages/92/e9/4143882abbe45ddab
 wheels = [
     { url = "https://files.pythonhosted.org/packages/c6/51/f140402202af6ce1bf747243f66415c5eb2f43ba2e2ac419a7e855d20673/streamlit-1.36.0-py2.py3-none-any.whl", hash = "sha256:3399a33ea5faa26c05dd433d142eefe68ade67e9189a9e1d47a1731ae30a1c42", size = 8589272 },
 ]
+
+[[package]]
+name = "telepath"
+version = "0.3.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/65/58/5de8765687d6f9dfcbb72c89251036c3b901126404f872b936b13377a3fe/telepath-0.3.1.tar.gz", hash = "sha256:925c0609e0a8a6488ec4a55b19d485882cf72223b2b19fe2359a50fddd813c9c", size = 11622 }
 
 [[package]]
 name = "tenacity"
@@ -1672,6 +1840,15 @@ wheels = [
 ]
 
 [[package]]
+name = "typeguard"
+version = "2.13.3"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/3a/38/c61bfcf62a7b572b5e9363a802ff92559cb427ee963048e1442e3aef7490/typeguard-2.13.3.tar.gz", hash = "sha256:00edaa8da3a133674796cf5ea87d9f4b4c367d77476e185e80251cc13dfbb8c4", size = 40604 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/9a/bb/d43e5c75054e53efce310e79d63df0ac3f25e34c926be5dffb7d283fb2a8/typeguard-2.13.3-py3-none-any.whl", hash = "sha256:5e3e3be01e887e7eafae5af63d1f36c849aaa94e3a0112097312aabfa16284f1", size = 17605 },
+]
+
+[[package]]
 name = "typing-extensions"
 version = "4.12.2"
 source = { registry = "https://pypi.org/simple" }
@@ -1696,6 +1873,93 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/43/6d/fa469ae21497ddc8bc93e5877702dca7cb8f911e337aca7452b5724f1bb6/urllib3-2.2.2.tar.gz", hash = "sha256:dd505485549a7a552833da5e6063639d0d177c04f23bc3864e41e5dc5f612168", size = 292266 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/ca/1c/89ffc63a9605b583d5df2be791a27bc1a42b7c32bab68d3c8f2f73a98cd4/urllib3-2.2.2-py3-none-any.whl", hash = "sha256:a448b2f64d686155468037e1ace9f2d2199776e17f0a46610480d311f73e3472", size = 121444 },
+]
+
+[[package]]
+name = "wagtail"
+version = "6.2.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "anyascii" },
+    { name = "beautifulsoup4" },
+    { name = "django" },
+    { name = "django-filter" },
+    { name = "django-modelcluster" },
+    { name = "django-permissionedforms" },
+    { name = "django-taggit" },
+    { name = "django-treebeard" },
+    { name = "djangorestframework" },
+    { name = "draftjs-exporter" },
+    { name = "l18n" },
+    { name = "laces" },
+    { name = "openpyxl" },
+    { name = "pillow" },
+    { name = "requests" },
+    { name = "telepath" },
+    { name = "willow", extra = ["heif"] },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/75/cb/7fca6daf7b11b15e0457fa58d1c5ef705bad6048403624a5079f386bb4a6/wagtail-6.2.2.tar.gz", hash = "sha256:506ac2b59dae85069ae754b45bc13b91cbd86e92d4f5d663658773b0ed7a16b9", size = 6568116 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/ee/98/9f528bd41b8a3ba21fd3eeb0f869758bd807cc5e54dd5b8eec8cbe465c44/wagtail-6.2.2-py3-none-any.whl", hash = "sha256:d0382603aef5d7e4a46529aa125857774a317c2870c9b6836767932969829429", size = 9072327 },
+]
+
+[[package]]
+name = "wagtail-dhivehi"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "crispy-tailwind" },
+    { name = "django" },
+    { name = "django-allauth" },
+    { name = "django-allauth-ui" },
+    { name = "django-browser-reload" },
+    { name = "django-cotton" },
+    { name = "django-crispy-forms" },
+    { name = "django-custom-error-views" },
+    { name = "django-debug-toolbar" },
+    { name = "django-storages", extra = ["s3"] },
+    { name = "gunicorn" },
+    { name = "huey" },
+    { name = "pillow" },
+    { name = "psycopg", extra = ["binary", "pool"] },
+    { name = "python-dotenv" },
+    { name = "pytz" },
+    { name = "redis" },
+    { name = "wagtail" },
+]
+
+[package.dev-dependencies]
+dev = [
+    { name = "aider-chat", extra = ["browser"] },
+    { name = "ruff" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "crispy-tailwind", specifier = ">=1.0.3" },
+    { name = "django", specifier = ">=5.1" },
+    { name = "django-allauth", specifier = ">=64.1.0" },
+    { name = "django-allauth-ui", specifier = ">=1.4.1" },
+    { name = "django-browser-reload", specifier = "==1.12.1" },
+    { name = "django-cotton", specifier = ">=0.9.32" },
+    { name = "django-crispy-forms", specifier = ">=2.3" },
+    { name = "django-custom-error-views", specifier = ">=0.2.5" },
+    { name = "django-debug-toolbar", specifier = "==4.2.0" },
+    { name = "django-storages", extras = ["s3"], specifier = ">=1.14.4" },
+    { name = "gunicorn", specifier = ">=23.0.0" },
+    { name = "huey", specifier = ">=2.5.1" },
+    { name = "pillow", specifier = ">=10.4.0" },
+    { name = "psycopg", extras = ["binary", "pool"], specifier = ">=3.2.1" },
+    { name = "python-dotenv", specifier = ">=1.0.1" },
+    { name = "pytz", specifier = ">=2024.1" },
+    { name = "redis", specifier = ">=5.0.8" },
+    { name = "wagtail", specifier = ">=6.2.2" },
+]
+
+[package.metadata.requires-dev]
+dev = [
+    { name = "aider-chat", extras = ["browser"], specifier = "==0.46.1" },
+    { name = "ruff", specifier = ">=0.6.3" },
 ]
 
 [[package]]
@@ -1726,6 +1990,24 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/6c/63/53559446a878410fc5a5974feb13d31d78d752eb18aeba59c7fef1af7598/wcwidth-0.2.13.tar.gz", hash = "sha256:72ea0c06399eb286d978fdedb6923a9eb47e1c486ce63e9b4e64fc18303972b5", size = 101301 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/fd/84/fd2ba7aafacbad3c4201d395674fc6348826569da3c0937e75505ead3528/wcwidth-0.2.13-py2.py3-none-any.whl", hash = "sha256:3da69048e4540d84af32131829ff948f1e022c1c6bdb8d6102117aac784f6859", size = 34166 },
+]
+
+[[package]]
+name = "willow"
+version = "1.8.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "defusedxml" },
+    { name = "filetype" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/77/c3/9d19db05d3abe0375e8d6bf2d3f7ea6f8df266d5ddabcc5a114c8a7cce1f/willow-1.8.0.tar.gz", hash = "sha256:ef3df6cde80d4914e719188147bef1d71c240edb118340e0c5957ecc8fe08315", size = 113313 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/95/7a/a48cf90bbf226f793d830c3bbdb7f0c4aa8087c08ce84cc864a1c882a457/willow-1.8.0-py3-none-any.whl", hash = "sha256:48ccf5ce48ccd29c37a32497cd7af50983f8570543c4de2988b15d583efc66be", size = 119223 },
+]
+
+[package.optional-dependencies]
+heif = [
+    { name = "pillow-heif" },
 ]
 
 [[package]]
