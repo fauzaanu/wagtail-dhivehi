@@ -1909,7 +1909,6 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "crispy-tailwind" },
-    { name = "django" },
     { name = "django-allauth" },
     { name = "django-allauth-ui" },
     { name = "django-browser-reload" },
@@ -1937,7 +1936,6 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "crispy-tailwind", specifier = ">=1.0.3" },
-    { name = "django", specifier = ">=5.1" },
     { name = "django-allauth", specifier = ">=64.1.0" },
     { name = "django-allauth-ui", specifier = ">=1.4.1" },
     { name = "django-browser-reload", specifier = "==1.12.1" },
